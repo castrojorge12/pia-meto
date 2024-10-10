@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Papelería en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Papelería en Línea</h1>
+    </header>
+    
+    <main>
+        <h2>Productos Disponibles</h2>
+        <div id="product-list">
+            <div class="product">
+                <h3>Cuaderno</h3>
+                <p>Precio: $2.00</p>
+                <input type="number" min="0" value="0" id="qty-1">
+                <button onclick="addToCart('Cuaderno', 2, document.getElementById('qty-1').value)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Lápiz</h3>
+                <p>Precio: $0.50</p>
+                <input type="number" min="0" value="0" id="qty-2">
+                <button onclick="addToCart('Lápiz', 0.5, document.getElementById('qty-2').value)">Agregar al Carrito</button>
+            </div>
+            <div class="product">
+                <h3>Resaltador</h3>
+                <p>Precio: $1.00</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+            <!-- Agrega más productos aquí -->
+        </div>
+        
+        <button onclick="viewCart()">Ver Carrito</button>
+    </main>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

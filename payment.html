@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datos de Pago</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Datos de Pago</h1>
+    </header>
+    
+    <main>
+        <form id="payment-form">
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" required>
+            
+            <label for="card-number">Número de Tarjeta:</label>
+            <input type="text" id="card-number" required>
+            
+            <label for="expiry-date">Fecha de Expiración:</label>
+            <input type="text" id="expiry-date" placeholder="MM/AA" required>
+            
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" required>
+            
+            <button type="submit">Confirmar Pago</button>
+        </form>
+    </main>
+    
+    <script>
+        document.getElementById('payment-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Aquí puedes agregar la lógica para procesar el pago.
+            alert('Pago confirmado. ¡Gracias por tu compra!');
+            // Redirecciona al usuario a la página de inicio o a otra página de agradecimiento.
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
