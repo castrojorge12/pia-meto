@@ -50,3 +50,18 @@ form input {
     padding: 8px;
     margin-bottom: 10px;
 }
+
+img {
+    width: 350px;
+    border-radius: 5%;
+
+}
+
+img:hover { 
+    box-shadow: 0 0 5px 5px rgba(41, 187, 228, 0.462);
+}
+
+.logo{
+    border-radius: 50%;
+    width: 200px;
+}

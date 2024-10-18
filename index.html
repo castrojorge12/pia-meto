@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <img class="logo" src="imga/LOGO.jpeg">
         <h1>Papelería en Línea</h1>
     </header>
     
@@ -15,24 +16,84 @@
         <h2>Productos Disponibles</h2>
         <div id="product-list">
             <div class="product">
-                <h3>Cuaderno</h3>
-                <p>Precio: $2.00</p>
+                <img src="imga/CUADERNO.jpg">
+                <h3>Cuaderno Profesional Scribe Escolar Plus #7970 Raya 100 h.</h3>
+                <p>Precio: $22.00</p>
                 <input type="number" min="0" value="0" id="qty-1">
                 <button onclick="addToCart('Cuaderno', 2, document.getElementById('qty-1').value)">Agregar al Carrito</button>
             </div>
+
             <div class="product">
-                <h3>Lápiz</h3>
-                <p>Precio: $0.50</p>
+                <img src="imga/LAPIZ.jpg">
+                <h3>Lápiz de Grafito #2 Mirado Hexagonal Bl/4</h3>
+                <p>Precio: $24.50</p>
                 <input type="number" min="0" value="0" id="qty-2">
                 <button onclick="addToCart('Lápiz', 0.5, document.getElementById('qty-2').value)">Agregar al Carrito</button>
             </div>
+
             <div class="product">
-                <h3>Resaltador</h3>
-                <p>Precio: $1.00</p>
+                <img src="imga/MARCATEXTOS.jpg">
+                <h3>Marcatextos Azor Visión Plus, Punta Cincel  C/12</h3>
+                <p>Precio: $127.00</p>
                 <input type="number" min="0" value="0" id="qty-3">
                 <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
             </div>
-            <!-- Agrega más productos aquí -->
+
+            <div class="product">
+                <img src="imga/PLUMA.jpg">
+                <h3>Bolígrafo Punto Mediano 1.0 mm Bic Dura+  C/12</h3>
+                <p>Precio: $49.00</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/CORRECTOR.jpg">
+                <h3>Corrector Líquido Pelikan Aqua Fluid 20 ml. Bl/1</h3>
+                <p>Precio: $16.50</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/PRIT.jpg">
+                <h3>Lápiz Adhesivo Pritt PS-20 22 g. bl/1</h3>
+                <p>Precio: $38.50</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/CRAYOLA.jpg">
+                <h3>Crayones Jumbo Crayola C/12</h3>
+                <p>Precio: $46.0</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/SACAPUNTAS.jpg">
+                <h3>Sacapuntas con Depósito Barrilito SPT37B Bl/1</h3>
+                <p>Precio: $24.00</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/borrador.jpg">
+                <h3>Borrador Migajón Pelikan Strike 20 Bl/3</h3>
+                <p>Precio: $25.50</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
+
+            <div class="product">
+                <img src="imga/CINTA.jpg">
+                <h3>Cinta Adhesiva Janel 119 18 mm x 33 m. Corte Fácil</h3>
+                <p>Precio: $8.50</p>
+                <input type="number" min="0" value="0" id="qty-3">
+                <button onclick="addToCart('Resaltador', 1, document.getElementById('qty-3').value)">Agregar al Carrito</button>
+            </div>
         </div>
         
         <button onclick="viewCart()">Ver Carrito</button>
