@@ -70,4 +70,10 @@ function registerUser() {
     window.location.href = 'register.html';
 }
 
+function Payment() {
+    window.location.href = 'payment.html';
+}
+
 window.onload = loadCartItems; // Carga los productos del carrito al cargar la página.
+
+
