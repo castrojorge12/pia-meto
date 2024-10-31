@@ -53,14 +53,12 @@ p {
 
 /* Estilos de los formularios */
 #user-forms {
-    background-color: skyblue;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
 #registration-form, #login-form {
-    background-color: skyblue;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 4px;
