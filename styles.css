@@ -13,6 +13,11 @@ header {
     text-align: center;
 }
 
+.diseñomochila{
+    width:80px;
+
+}
+
 /* Logo en el header */
 .logo {
     border-radius: 50%;
