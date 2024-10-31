@@ -2,66 +2,65 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #e0f7fa; /* Color celeste suave */
 }
 
+/* Header */
 header {
     background-color: #007bff;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
 }
 
+/* Logo en el header */
+.logo {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+/* Contenedor principal */
 main {
     margin-top: 20px;
 }
 
-.product, #cart-items > div {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px 0;
-    background-color: white;
+/* Estilo de productos */
+#product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* 3 columnas en pantallas grandes y 1 en pantallas pequeñas */
+    gap: 20px; /* Espaciado entre los productos */
 }
 
+/* Estilo de cada producto */
+.product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centrar el texto dentro de las cajas */
+}
+
+.product img {
+    width: 100%; /* Ajustar la imagen al ancho de la caja */
+    height: auto; /* Mantener la proporción de la imagen */
+    border-radius: 5%;
+}
+
+/* Botones */
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px;
+    padding: 10px 15px; /* Ajuste de tamaño */
     cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    display: block; /* Para permitir el centrado */
+    margin: 10px auto 0; /* Centrar el botón */
 }
 
 button:hover {
     background-color: #0056b3;
-}
-
-form {
-    max-width: 300px;
-    margin: 0 auto;
-}
-
-form label {
-    display: block;
-    margin: 5px 0;
-}
-
-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-}
-
-img {
-    width: 350px;
-    border-radius: 5%;
-
-}
-
-img:hover { 
-    box-shadow: 0 0 5px 5px rgba(41, 187, 228, 0.462);
-}
-
-.logo{
-    border-radius: 50%;
-    width: 200px;
 }
