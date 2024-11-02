@@ -81,7 +81,7 @@ form input {
 
 /* Estilos para los botones */
 button {
-    background-color: #007bff;
+    background-color: #3ba3f1;
     color: white;
     border: none;
     padding: 10px 15px; /* Ajuste de tamaño */
@@ -93,7 +93,7 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #4c95e2;
 }
 
 /* Imagen de Google Maps y otras imágenes */
@@ -103,6 +103,7 @@ img {
     border-radius: 5%;
     margin: 0 auto;
     display: block;
+   
 }
 
 img:hover {
