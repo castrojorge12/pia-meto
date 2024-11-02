@@ -49,6 +49,9 @@ function loadCartItems() {
     const totalDiv = document.createElement('div');
     totalDiv.innerHTML = `<h3>Total: $${total.toFixed(2)}</h3>`;
     cartContainer.appendChild(totalDiv);
+
+    // Guarda el total en el almacenamiento local
+    localStorage.setItem('cartTotal', total);
 }
 
 function updateQuantity(index, newQuantity) {
@@ -73,20 +76,26 @@ function removeFromCart(index) {
 }
 
 function registerUser() {
-    // Verifica si el carrito está vacío antes de proceder al registro
-    if (cart.length === 0) {
-        alert('Tu carrito está vacío. Debes agregar productos antes de registrarte.');
+    // Obtén el total del carrito desde el almacenamiento local
+    const total = parseFloat(localStorage.getItem('cartTotal')) || 0;
+
+    // Verifica si el total es inferior a 200 pesos
+    if (total < 200) {
+        alert('El monto mínimo de compra es de $200. Agrega más productos para registrarte.');
     } else {
-        window.location.href = 'register.html'; // Redirige a la página de registro si hay productos
+        window.location.href = 'register.html'; // Redirige a la página de registro si el total es mayor o igual a 200
     }
 }
 
 function Payment() {
-    // Verifica si el carrito está vacío antes de proceder al pago
-    if (cart.length === 0) {
-        alert('Tu carrito está vacío. No puedes continuar con el pago.');
+    // Obtén el total del carrito desde el almacenamiento local
+    const total = parseFloat(localStorage.getItem('cartTotal')) || 0;
+
+    // Verifica si el total es inferior a 200 pesos
+    if (total < 200) {
+        alert('El monto mínimo de compra es de $200. Agrega más productos para continuar con el pago.');
     } else {
-        window.location.href = 'payment.html'; // Redirige a la página de pago si hay productos
+        window.location.href = 'payment.html'; // Redirige a la página de pago si el total es mayor o igual a 200
     }
 }
 
