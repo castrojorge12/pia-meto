@@ -41,7 +41,7 @@
             <label for="confirm-password">Confirmar Contraseña:</label>
             <input type="password" id="confirm-password" maxlength="8" placeholder="Repite la contraseña" required>
 
-            <button onclick="location.href='index.html'">Registrarse</button>
+            <button type="submit">Registrarse</button>
         </form>
 
         <div id="login-form">
@@ -84,7 +84,9 @@
                 return;
             }
 
+            // Si todo es correcto, redirige al index.html
             alert('Registro exitoso.');
+            window.location.href = 'index.html';
         });
     </script>
 </body>
